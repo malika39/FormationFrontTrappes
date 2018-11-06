@@ -1,0 +1,32 @@
+
+/*------------------------------------
+--------Header| mise en page de la balise"<nav>"
+--------------------------------------
+1. tous les liens sont noir
+2. les liens ne sont pas souligné
+3.ils sont affiché en ligne gra avec diplay propriété
+4.centré sur la plage
+attribué une couleur au passage de la souris (hover)
+6.pareil pour le current
+7.utilisez une police "roboto"*/
+
+header {
+    
+    width: 100%;
+    height: 120px;
+   // background: rgba(102, 84, 71, 0.76);
+  
+    //background-size: cover;
+    position: relative;
+  
+    
+        img { 
+            position: absolute;
+            display: flow-root;
+           //  top: 5rem;
+      //       left: 5rem;
+        }
+        
+       }
+ 
+  

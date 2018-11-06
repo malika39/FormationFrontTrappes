@@ -1,0 +1,24 @@
+/*---------------------------------------------
+je souhaite changer la couleur du fond de ma page
+-----------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Chicle');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+//j'import mes variables depuis le fichier_variable.
+@import'helpers/variables';
+@import'helpers/mixins';
+//j'import mon fichier normalise modifier en fichier _base.
+@import'base/base';
+*{box-sizing: border-box} /*ne pas avoir besoin de definir le padding chaque fois qu'on utilise le border dans tous le site*/
+
+//j'import mon fichier layout
+@import'layouts/layouts';
+ 
+        
+//j'import mon fichier headers
+@import'components/headers';
+
+//j'import mon fichier navigation
+@import'components/navigation';
+//j'import mon fichier footer
+@import'components/footer';

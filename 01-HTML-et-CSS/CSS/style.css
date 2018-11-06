@@ -1,0 +1,150 @@
+/*---------------------------------------------
+je souhaite changer la couleur du fond de ma page
+-----------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+html{
+    
+    
+    font-size: 62.5%;}/*pour l'ajustement automatique en display de la police en unité REM=10 pixel*/
+body{
+    /*background-color: #EEE;*/
+ background: url(../fond.jpg) no-repeat; background-size: cover  
+}
+
+/*------------------------------------
+--------Layout| mise en page
+--------------------------------------
+     1- definir la largeur de ma page à 960 pixel
+     2- un contenu centré au milieu
+     3- fond blanc
+     4 - Je souhaite rajouter une marge top/bottom de 40px
+     5 - Avec la propriété border-radius, ajoutez un arrondi de 5px
+     6 - Grâce à box-shadow, ajoutez une ombre légère autour du "main"
+-----------------------------------------*/
+main {
+    width:960px;
+   
+    margin: 8rem auto;
+   
+    background-color: rgba(235, 116, 18, 0.719);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    overflow: hidden; /*overflow avec la valeur hidden va cacher tots les element qui dépassent de la balise "main"*/
+    box-shadow:0 px 0px 1.5rem #ca4141;
+    padding: .5rem;
+ }
+
+  /*header{
+        position: absolute;left:50px ;right: 50px;}*/
+        
+
+/*------------------------------------
+--------Header| mise en page de la balise"<nav>"
+--------------------------------------
+1. tous les liens sont noir
+2. les liens ne sont pas souligné
+3.ils sont affiché en ligne gra avec diplay propriété
+4.centré sur la plage
+attribué une couleur au passage de la souris (hover)
+6.pareil pour le current
+7.utilisez une police "roboto"*/
+
+header {
+    width: 100%;
+    height: 260px;
+    background:url(../fond-entéte.jpg);background-size: cover;
+   position: relative;
+      }
+header img { position: absolute;
+    top: 5rem;
+    left: 5rem;
+    }
+  
+
+nav{text-align: center}
+nav ul{padding: 0;margin:0}
+nav li {
+    display: inline-block ;/*pour le display en block*/
+    padding: 0 4 rem;
+}
+nav a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+nav a:hover{color: burlywood}
+/*il faut créer le current */
+ nav a.current a{color:red;
+font-weight: bold;}
+
+    /*------------------------------------
+--------section| contenu du site
+--------------------------------------*/
+section{
+    width: 100%;
+    height: auto;
+    float: left;
+}
+section h1 {
+    font-family: 'Roboto',sans-serif;
+    text-align: center;
+    font-weight: normal;
+    border-bottom: .1rem dashed #000000;
+   
+}
+section aside{width: calc(100%/2);
+    float: left
+}
+section aside img{
+max-width: 100%;}
+
+section article{width:calc(100%/2) ;float: left;box-sizing: border-box;padding:0 1rem; text-align: justify;font-family: Arial, Helvetica, sans-serif;font-size:1.5rem}
+
+section article p strong{color: brown};
+/*------------------------------------
+--------section footer| contenu du site
+--------------------------------------*/
+
+footer{width: 100%;float: left;background-color: aqua;padding: 1rem};
+    footer section :first-child{width:calc(100%/3);float: left};
+    footer   section:nth-child(2) {width:calc((100%/3)-1rem);margin-left: 1rem ;float: left};
+    footer   section:nth-child(2) fieldset{ font-family: 'Roboto',sans-serif; border-radius: 8px;font-size: 1.5rem;
+        border: .2rem solid #FFF;
+        color: #000;
+        height: 180px;    }
+        form input {
+            width: calc(100%-2rem);
+            height: 2.5rem;
+            border: 0;
+            margin-bottom: 0.5rem;
+            padding: .5rem 1rem;
+
+        }   
+
+
+form input[type=submit]{
+
+    width: 100%;
+    height: 3.5rem;
+    margin-top: 1rem;
+    border:0;
+    background-color: #FFF;
+    font-size: 1.6rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*coordonnées de contact*/
+    footer section:last-child {width:calc(100%/3);float: left;font-family: 'Roboto',sans-serif};
+
+    footer section:last-child h3{text-align: center;font-weight: normal;color: #FFF;font-size:1.60rem;}
+    footer address {
+        color: #FFF;
+        font-style: normal;padding: 4rem;
+    
+    }
+    footer address strong { font-size: 2rem}
+    footer address a{color: #FFF;text-decoration: none}
+    footer address a:hover{text-decoration: underline} 

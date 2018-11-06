@@ -1,0 +1,87 @@
+<!DOCTYP html>
+<!--la balise html contient l'ensemble de la page.-->
+<html>
+      <!-- la balise "body" on mettera le contenu de notre page-->
+     <head>
+  <!--permet de préciser l'encodage-->
+  <meta charset="utf-8">
+  <!--titre de ma page--> <!--"mes voyage"-->
+  <title> Atelier01</title>
+
+  <!--j'importe ma feuille de styleCss aprés normalize-->
+  <link rel="stylesheet" href="./dist/css/style.min.css">
+     </head>        
+      <body> 
+        
+        <main> 
+             <!--en tete du site-->
+                <header>   
+                <h1>MES VOYAGES
+                     </h1>
+    <!--la balise "head" contient l'entéte de ma page-->
+          
+       
+         <a href="index.html">
+        <img src="./dist/img/road.jpeg" height="80" width="80" alt="c'est le logo pour les aveugle">
+         </a>
+               </header>   
+             <!-- menu du site-->
+      
+           <!--Emmet : nav>ul>li*3>a [href=#]{ lien $$}-->
+       
+        <nav>
+            <ul>
+                    <li><a class="current" ><a href="index.html">Accueil</a></li>
+               
+                <li><a href=# >Présentation </a></li>
+                <li><a href=# >contact</a></li>
+            </ul> 
+       
+        </nav>
+        <!--Contenu de mon site-->
+        <section>
+           
+                <h1>Singapour...le rève</h1>
+                <aside> <img src="./dist/img/singapor.jpg" alt="vivez le rève"/></aside> 
+                <article >
+                     
+                        <p>Mes aventures en Asie, le blog qui raconte les merveilleux paysages et endrois d'attractions qui se trouvent à Singapour </p><br/><p><strong>bzugjheuryfbeqjhktaleu</strong></p>
+
+                </article>
+            
+        </section>
+   
+        <footer>
+             <!--le pied de la page--> 
+            <section class="gmap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127639.07537866537!2d103.75400476246273!3d1.3437449463632196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1767b42b8ec9%3A0x400f7acaedaa420!2sSingapour!5e0!3m2!1sfr!2sfr!4v1537798022361" width=100% height="200" frameborder="0" style="border:0" allowfullscreen></iframe></section>
+          <!--la newsletter-->
+            <section>
+            <form action="fichierchargerdutraitementdesdonnées.php"
+                    name="NomduFormulaire"
+                    method="Post">
+                    <fieldset>
+                        <legend>Newsletter</legend>
+                        <input type="email" placeholder= "saisir votre email.">
+                        <input type="text" placeholder= "saisir votre Nom.">
+                        <input type="text" placeholder= "saisir votre Prénom.">
+                        <input type="submit" value= "M'inscrire !.">  
+                    </fieldset>
+            </form>
+            </section>
+            <!--coordonnée de contact-->
+        <section>
+            <h3>Contactez nous</h3>
+            <address>
+                <strong>Voyage</strong><br>
+                <a href="tel:0689454541">0320304050</a><br>
+                <a href="mailto:contact@gmail.com">Contact@gmail.com</a><br>
+                    2 Rue Eugène Pottier 78192 <br>
+                    Trappes, France<br>
+            </address>
+        </section>
+        </footer>
+
+        </main>
+</body>
+</html>
+

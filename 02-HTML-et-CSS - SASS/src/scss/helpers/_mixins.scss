@@ -1,0 +1,3 @@
+@mixin linear-gradient($from,$to) {
+    background-image: linear-gradient(360deg,$from,$to);
+}

@@ -1,0 +1,103 @@
+
+
+//layout du main
+html{
+    
+    
+    font-size: 62.5%;}/*pour l'ajustement automatique en display de la police en unité REM=10 pixel*/
+body{
+    /*background-color: #EEE;*/
+ background: url('../../../dist/img/singapor.jpg') no-repeat; 
+ background-size: cover ; 
+       h1  {
+            font-family: $ff-secondary;
+           
+           }
+     }
+
+/*------------------------------------
+--------Layout| mise en page
+--------------------------------------
+     1- definir la largeur de ma page à 960 pixel
+     2- un contenu centré au milieu
+     3- fond blanc
+     4 - Je souhaite rajouter une marge top/bottom de 40px
+     5 - Avec la propriété border-radius, ajoutez un arrondi de 5px
+     6 - Grâce à box-shadow, ajoutez une ombre légère autour du "main"
+-----------------------------------------*/
+main {
+    width:100%;
+    max-width:1000px ; 
+   
+    margin: 8rem auto;
+   
+    background-color: rgba(32, 34, 32, 0.808);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    overflow:hidden ; /*overflow avec la valeur hidden va cacher tots les element qui dépassent de la balise "main"*/
+    box-shadow:0 px 0px 1.5rem #cfc2c2;
+    padding: .5rem;
+    div { .plage{
+                img{
+                   width: 100%;
+                   float: left;
+                    image-rendering: crisp-edges;
+                                  
+        }
+     
+    }
+}
+   div { 
+       width: 100%;
+       float: left;
+       color: $clr-secondary;
+     
+       article{
+           width: 50%;
+           float: left;
+           text-align: justify;
+           margin: 0%;
+        }
+        aside {
+               width: 50%;
+               float: left;
+               text-align: justify;
+               
+              margin: 0%;
+              }  
+             }
+
+  
+    div {
+       section {
+
+        &:first-child { width: calc(100% / 3);
+            float: left;
+                       }   
+         &:nth-child(2) {
+          width: calc( (100% / 3) - 1rem);
+                     margin-left: 1rem;
+          float: left; 
+               }  
+         &:last-child {
+           width: calc(
+    
+      100% / 3);
+             float: left;}
+   
+    }
+} 
+
+    .partenaires {
+        width: 100%;
+        float: left;
+        text-align: center;
+        padding: 1rem 0;
+        background-image: linear-gradient(360deg, #CCC, #FFF);
+        img {
+            height: 7rem;
+            margin: 0 1rem;
+        }
+    }
+
+}
